@@ -185,6 +185,12 @@ def problem3(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    n = 0
+    for k in range (len(sequence)):
+        if is_prime(sequence[k]) == True:
+            sequence[k] = sequence[k] + 3
+            n = n+1
+    return n
 
 
 ###############################################################################

@@ -139,6 +139,13 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
+    for k in range(n, 0,-1):
+        if fibonacci(k) == True:
+            return fibonacci(k)
+
+
+
+
 
 
 ###############################################################################

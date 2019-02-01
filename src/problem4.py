@@ -275,6 +275,13 @@ def problem4(seq_of_seq, n):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range (len(seq_of_seq)):
+        subsequence = seq_of_seq[k]
+        for j in range (len(subsequence)):
+            if is_prime(subsequence[j] ) == True:
+                if subsequence[j] > n:
+                    return subsequence[j]
+    return -1
 
 
 ###############################################################################

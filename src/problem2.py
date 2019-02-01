@@ -80,6 +80,15 @@ def shape(n):
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
+    for j in range (n+1):
+        for k in range(n-j):
+            print(n-k, end='')
+        print('*',end ='')
+        for i in range(1,j):
+                print(i, end='')
+        print()
+
+
 
 
 # ----------------------------------------------------------------------

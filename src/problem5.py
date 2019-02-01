@@ -9,6 +9,7 @@ Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher,
 
 import time
 import testing_helper
+import math
 
 
 def main():
@@ -148,6 +149,20 @@ def problem5(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    list = []
+
+    for k in range (len(seq_of_seq)):
+        largest = -math.inf
+        subsequence = seq_of_seq[k]
+        for j in range(len(subsequence)):
+            if subsequence[j]>largest:
+                largest = subsequence[j]
+        list = list + [largest]
+        for m in range(len(list)):
+            if list[m] == 0:
+                list.pop(m)
+
+    return list
 
 
 ###############################################################################
